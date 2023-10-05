@@ -2,3 +2,4 @@ dash-bootstrap-components==0.11.3
 dash-glue42==1.5.0a0
 Flask>=2.2.2
 dash>=2.7.0
+gunicorn>=21.2.0
