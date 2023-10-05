@@ -3,6 +3,7 @@ from dash import Dash, Input, Output, html, dcc, callback_context
 from dash.exceptions import PreventUpdate
 import dash_bootstrap_components as dbc
 import json
+from flask import Flask
 
 # Loading clients data.
 with open("data/clients.json", encoding="utf-8") as f:
@@ -11,6 +12,8 @@ with open("data/clients.json", encoding="utf-8") as f:
 app = Dash(__name__,
         external_stylesheets=[dbc.themes.BOOTSTRAP]
     )
+
+server = app.server
 
 # app.enable_dev_tools()
 
